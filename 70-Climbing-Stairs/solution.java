@@ -4,12 +4,10 @@ public class Solution {
         int res = 0;
         if(n<3)
             return n;
-        n -= 1;
-        while(n!=0){
+        while(--n!=0){
             res = first + second;
             first = second;
             second = res;
-            n--;
         }
         
         return res;
